@@ -1,0 +1,15 @@
+/* * {
+    background-image: url("../public/background.jpeg");
+} *//* Clothes.css */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

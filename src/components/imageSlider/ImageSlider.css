@@ -1,0 +1,54 @@
+/* Contenedor del slider */
+.slider {
+    position: relative ;
+    width: 100%; /* Hace que el slider use todo el ancho del contenedor */
+    max-width: 1360px; /* Define un ancho máximo para el slider */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    margin: 0 auto; /* Centra el slider en su contenedor */
+  }
+  
+  /* Imagen del slider */
+  .slider-image {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del slider */
+    height: 500px; /* Mantiene la proporción de la imagen */
+  }
+  
+  /* Botones de navegación */
+  .arrow {
+    position: absolute;
+    top: 50%; /* Centra verticalmente el botón */
+    transform: translateY(-50%); /* Ajusta la posición del botón */
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 24px; /* Tamaño del ícono */
+    cursor: pointer;
+    z-index: 3; /* Asegura que los botones estén sobre la imagen */
+    padding: 10px;
+    border-radius: 100%; /* Hace los botones redondeados */
+  }
+  
+  /* Botón de navegación izquierda */
+  .arrow.left {
+    left: 10px; /* Ajusta la posición desde el borde izquierdo */
+  }
+  
+  /* Botón de navegación derecha */
+  .arrow.right {
+    right: 10px; /* Ajusta la posición desde el borde derecho */
+  }
+  
+  /* Media Queries para dispositivos móviles */
+  @media (max-width: 768px) {
+    .arrow {
+      font-size: 20px; /* Reduce el tamaño del ícono en pantallas más pequeñas */
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .arrow {
+      font-size: 18px; /* Ajusta aún más el tamaño del ícono para dispositivos muy pequeños */
+      padding: 6px;
+    }
+  }

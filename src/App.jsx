@@ -1,13 +1,14 @@
-import Clothes from '..components /clothes/Clothes' 
+import React from 'react';
+import Clothes from './components/clothes/Clothes';
+import PersistentDrawerLeft from "./components/sideBar/SideBar"
 
 function App() {
-  //aca van las funciones
   return (
-    <>
+    <div>
+      {PersistentDrawerLeft()}
       <Clothes/>
-    </>
-  
-  )
+    </div>
+    )
 }
 
-export default App
+export default App;

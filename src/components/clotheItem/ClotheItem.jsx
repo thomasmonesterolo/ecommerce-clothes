@@ -1,11 +1,12 @@
 import React from 'react'
 import { Card } from 'react-bootstrap';
 
+
 const ClotheItem = ({ item }) => {
     return (
         <Card style={{ width: 250, height: 500}}>
             <Card.Img
-                height={400}
+                height={300}
                 variant="top"
                 src={item.img !== "" ? item.img : "https://bit.ly/47NylZk"}
             />
