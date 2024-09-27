@@ -1,0 +1,12 @@
+.slideshow-container {
+    width: 900px; /* o un tamaño específico como 600px */
+    height: 450px; /* altura específica */
+    overflow: hidden; /* para ocultar el desbordamiento */
+    position: relative;
+}
+
+.slideshow-container img {
+    width: 100%; /* ajustar el ancho al contenedor */
+    height: auto; /* mantener la proporción de la imagen */
+    object-fit: cover; /* cubre el área sin deformar */
+}

@@ -119,6 +119,8 @@ export default function PersistentDrawerLeft() {
           '& .MuiDrawer-paper': {
             width: drawerWidth,
             boxSizing: 'border-box',
+            backgroundColor: 'rgba(0, 0, 0, 0.8)', // fondo
+            color: 'white' // color texto
           },
         }}
         variant="persistent"
@@ -132,10 +134,15 @@ export default function PersistentDrawerLeft() {
         </DrawerHeader>
         <Divider />
         <List>
-          {['Productos', 'Sale', 'Contactos', 'Drafts'].map((text, index) => (
+          {['Productos', 'OFF', 'Contactos', 'Drafts'].map((text, index) => (
             <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
+              <ListItemButton sx={{
+                '&:hover': {backgroundColor: '#333'},//COLOR PASAR EL RATON
+              }}>
+                <ListItemIcon sx={{
+                  minWidth: 35,
+                  color: 'white', // color de los iconos
+                }}>
                   {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                 </ListItemIcon>
                 <ListItemText primary={text} />
@@ -147,9 +154,14 @@ export default function PersistentDrawerLeft() {
         <List>
           {['All mail', 'Trash', 'Spam'].map((text, index) => (
             <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              <ListItemButton sx={{
+                '&:hover': {backgroundColor: '#333'}// color al pasar el raton
+              }}>
+                <ListItemIcon sx={{
+                  minWidth: 35,
+                  color: 'white',// color iconos
+                    }}>
+                  {index % 2 === 0 ? <InboxIcon/> : <MailIcon />}
                 </ListItemIcon>
                 <ListItemText primary={text} />
               </ListItemButton>

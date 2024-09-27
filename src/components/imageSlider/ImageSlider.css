@@ -2,15 +2,15 @@
 .slider {
     position: relative ;
     width: 100%; /* Hace que el slider use todo el ancho del contenedor */
-    max-width: 1360px; /* Define un ancho máximo para el slider */
+    max-width: 1000px; /* Define un ancho máximo para el slider */
     overflow: hidden; /* Oculta cualquier contenido que se desborde */
     margin: 0 auto; /* Centra el slider en su contenedor */
   }
   
   /* Imagen del slider */
   .slider-image {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho del slider */
-    height: 500px; /* Mantiene la proporción de la imagen */
+    width: 50%; /* Asegura que la imagen ocupe todo el ancho del slider */
+    height: 100px; /* Mantiene la proporción de la imagen */
   }
   
   /* Botones de navegación */
