@@ -5,7 +5,7 @@ import SlideShow from '../imageSlider/Slideshow.jsx' // Asegúrate de importar e
 import "./Clothes.css"
  
 const imagesRopa  = [
-    '/videos/portada6.mp4',
+    '/videos/portada9.mp4',
     '/videos/portada7.mp4',
     '/videos/portada8.mp4',
     
