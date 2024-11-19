@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import ClotheItem from '../clotheItem/ClotheItem'
 import BookSearch from '../bookSearch/BookSearch'
 import SlideShow from '../imageSlider/Slideshow.jsx' // Asegúrate de importar el componentet

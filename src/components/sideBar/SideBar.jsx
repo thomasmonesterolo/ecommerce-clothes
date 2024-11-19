@@ -18,6 +18,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import { useNavigate } from 'react-router-dom';
 
 const drawerWidth = 240;
 
@@ -88,8 +89,10 @@ export default function PersistentDrawerLeft() {
     setOpen(false);
   };
 
+  const navigate = useNavigate();
+
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar position="fixed" open={open}>
         <Toolbar>
@@ -102,12 +105,12 @@ export default function PersistentDrawerLeft() {
               {
                 mr: 3,
               },
-              open && { display: 'none' },
+              open && { display: "none" },
             ]}
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
+          <Typography variant="h6" noWrap component="div" onClick={() => navigate("/")}>
             RUDAMACHO.IND
           </Typography>
         </Toolbar>
@@ -116,11 +119,11 @@ export default function PersistentDrawerLeft() {
         sx={{
           width: drawerWidth,
           flexShrink: 0,
-          '& .MuiDrawer-paper': {
+          "& .MuiDrawer-paper": {
             width: drawerWidth,
-            boxSizing: 'border-box',
-            backgroundColor: 'rgba(0, 0, 0, 0.8)', // fondo
-            color: 'white' // color texto
+            boxSizing: "border-box",
+            backgroundColor: "rgba(0, 0, 0, 0.8)", // fondo
+            color: "white", // color texto
           },
         }}
         variant="persistent"
@@ -129,39 +132,56 @@ export default function PersistentDrawerLeft() {
       >
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+            {theme.direction === "ltr" ? (
+              <ChevronLeftIcon />
+            ) : (
+              <ChevronRightIcon />
+            )}
           </IconButton>
         </DrawerHeader>
         <Divider />
         <List>
-          {['Productos', 'OFF', 'Contactos', 'Drafts'].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton sx={{
-                '&:hover': {backgroundColor: '#333'},//COLOR PASAR EL RATON
-              }}>
-                <ListItemIcon sx={{
-                  minWidth: 35,
-                  color: 'white', // color de los iconos
-                }}>
+          {[
+            { name: "Productos", path: "/productos" },
+            { name: "OFF", path: "/off" },
+            { name: "Contactos", path: "/contactos" },
+          ].map((text, index) => (
+            <ListItem key={index} disablePadding>
+              <ListItemButton
+                sx={{
+                  "&:hover": { backgroundColor: "#333" }, //COLOR PASAR EL RATON
+                }}
+                onClick={() => navigate(text.path)}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 35,
+                    color: "white", // color de los iconos
+                  }}
+                >
                   {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                 </ListItemIcon>
-                <ListItemText primary={text} />
+                <ListItemText primary={text.name} />
               </ListItemButton>
             </ListItem>
           ))}
         </List>
         <Divider />
         <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
+          {["All mail", "Trash", "Spam"].map((text, index) => (
             <ListItem key={text} disablePadding>
-              <ListItemButton sx={{
-                '&:hover': {backgroundColor: '#333'}// color al pasar el raton
-              }}>
-                <ListItemIcon sx={{
-                  minWidth: 35,
-                  color: 'white',// color iconos
-                    }}>
-                  {index % 2 === 0 ? <InboxIcon/> : <MailIcon />}
+              <ListItemButton
+                sx={{
+                  "&:hover": { backgroundColor: "#333" }, // color al pasar el raton
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 35,
+                    color: "white", // color iconos
+                  }}
+                >
+                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                 </ListItemIcon>
                 <ListItemText primary={text} />
               </ListItemButton>
@@ -171,8 +191,6 @@ export default function PersistentDrawerLeft() {
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-        
-
       </Main>
     </Box>
   );

@@ -10,5 +10,6 @@
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   min-height: 100vh; /* Asegura que el fondo cubra al menos toda la altura de la ventana */
   padding: 20px; /* Ajusta el padding según sea necesario */
+  
 }
 
