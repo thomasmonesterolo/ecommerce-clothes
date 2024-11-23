@@ -21,13 +21,22 @@ const App = () => {
       ),
     },
     {
-      path: "/productos",
+      path: "/off",
       element: (
         <MainLayout>
           <div>login</div>
         </MainLayout>
       ),
     },
+    {
+      path: "/contactos",
+      element: (
+        <MainLayout>
+          <div>login</div>
+        </MainLayout>
+      ),
+    },
+    
   ]);
 
   return (
