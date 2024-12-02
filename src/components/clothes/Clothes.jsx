@@ -42,76 +42,161 @@ const clothesData = [
          img: "/images/perfumeblueblood.jpg"
 
      },
-    // {
-    //     id: 5,
-    //     name: "Campera rompe viento",
-    //     description: "campera especial para invierno.",
-    //     size: "S",
-    //     color: "Verde",
-    //     img: "https://scandinavianar.vtexassets.com/arquivos/ids/177980-800-auto?v=638334082479530000&width=800&height=auto&aspect=true"
+     {
+        id: 5,
+        name: "Remera Estampada",
+        description: "Remera 100% algodon, con estampa frontal",
+         size: "S  M  L",
+        color: "Negro",
+         img: "/images/bell negro.jpg"
+    },
+     {
+         id: 6,
+         name: "Remera Brise",
+         description: "Remera 100% de algodon, con estampa basica",
+         size: " M  L  XXL",
+         color: "Negro",
+       img: "/images/brise negro.jpg",
+     },
+    /* {
+         id: 7,
+         name: "Buzo Abraham",
+         description: "Buzo de algodon rustico, con estampa basica frontal",
+         size: "L",
+         color: "Negro",
+         img: "/images/buzo abraham.jpg"
+     },
+     {
+         id: 8,
+         name: "Remera Cady",
+         description: "Remera 100% aldodon, con estampa basica",
+         size: "M  XL  XXL",
+         color: "Negro",
+         img: "/images/cady beige.jpg"
 
-    // },
-    // {
-    //     id: 6,
-    //     name: "Jeans",
-    //     description: "Jeans ajustados de mezclilla, estilo moderno.",
-    //     size: "32",
-    //     color: "Negro",
-    //     img: "https://acdn.mitiendanube.com/stores/001/343/531/products/dsc01934-7b5483077a5e83a87e17107643004432-640-0.jpg"
+     },
+     {
+         id: 9,
+         name: "Campera Sedam",
+         description: "campera especial para invierno, de algodon con friza",
+        size: "S  M  L",
+       color: "Gris",
+        img: "/images/campera sedam gris.jpg",
 
-    // },
-    // {
-    //     id: 7,
-    //     name: "Chaqueta",
-    //     description: "Chaqueta de jean, ideal para el invierno.",
-    //     size: "L",
-    //     color: "Negro",
-    //     img: "https://forever21.com.ar/media/catalog/product/cache/06cfaa02c67cf3a5c3c05d775284c631/c/a/campera-denim-hombre-forever21-r2t000041-550_6__1.jpg"
-    // },
-    // {
-    //     id: 8,
-    //     name: "Zapatos",
-    //     description: "Zapatos de cuero, elegantes y cómodos.",
-    //     size: "42",
-    //     color: "Negro",
-    //     img: "https://dinobutelli.com.ar/wp-content/uploads/2023/02/zapato-vestir-hombre-dino-butelli-cuero6.jpg"
+     },
+     {
+         id: 10,
+        name: "Buzo canguro Basic",
+    description: "Buzo con capucha, de algodon con friza.",
+         size: "L  XL  XXL",
+         color: "Bordo",
+         img: "/images/canguro bordo.jpg"
+     },
+     {
+         id: 11,
+       name: "Pantalon Chino",
+        description: "Pantalon de gabardina.",
+        size: "30 36 38 40",
+        color: "Azul",
+       img: "/images/chino azul1.jpg"
 
-    // },
-    // {
-    //     id: 9,
-    //     name: "Campera rompe viento",
-    //     description: "campera especial para invierno.",
-    //     size: "S",
-    //     color: "Verde",
-    //     img: "https://scandinavianar.vtexassets.com/arquivos/ids/177980-800-auto?v=638334082479530000&width=800&height=auto&aspect=true"
+    },
+   {
+         id: 12,
+        name:"Pantalon chino",
+         description: "Pantalon de gabardina",
+         size: " 28 30 3,8 42",
+         color: "Camel",
+         img: "/images/chino camel.jpg",
 
-    // },
-    // {
-    //     id: 10,
-    //     name: "Chaqueta",
-    //     description: "Chaqueta de jean, ideal para el invierno.",
-    //     size: "L",
-    //     color: "Negro",
-    //     img: "https://forever21.com.ar/media/catalog/product/cache/06cfaa02c67cf3a5c3c05d775284c631/c/a/campera-denim-hombre-forever21-r2t000041-550_6__1.jpg"
-    // },
-    // {
-    //     id: 11,
-    //     name: "Zapatos",
-    //     description: "Zapatos de cuero, elegantes y cómodos.",
-    //     size: "42",
-    //     color: "Negro",
-    //     img: "https://dinobutelli.com.ar/wp-content/uploads/2023/02/zapato-vestir-hombre-dino-butelli-cuero6.jpg"
+     },
+     {
+        id: 13 ,
+       name:"Chomba Kane",
+        description: "Chomba basica lisa de piquet",
+        size: "S  M  XL",
+        color: "Azul",
+        img: "/images/chomba kane azul.jpg",
 
-    // },
-    // {
-    //     id: 12,
-    //     name: "Campera rompe viento",
-    //     description: "campera especial para invierno.",
-    //     size: "S",
-    //     color: "Verde",
-    //     img: "https://scandinavianar.vtexassets. com/arquivos/ids/177980-800-auto?v=638334082479530000&width=800&height=auto&aspect=true"
+    },
+    {
+         id: 14,
+       name:"Chomba Kane",
+        description: "Chomba basica lisa de piquet",
+        size: "S  M  XL",
+        color: "Blanco",
+        img: "/images/chomba kane blanco.jpg",
+         
+},
+{       id: 15,
+       name:"Chomba Kane",
+        description: "Chomba basica lisa de piquet",
+        size: "S  M  XL",
+        color: "Negro",
+        img: "/images/chomba kane negro.jpg",
+},
+{
+         id: 16,
+       name:"Chomba Kane",
+        description: "Chomba basica lisa de piquet",
+        size: "S  M  XL",
+        color: "Gris",
+        img: "/images/chomba kane gris.jpg",
+},
+{
+        id: 18,
+       name:"Pantalon de Jean",
+        description: "Pantalon de jean chupin, con spandex",
+        size: "28 30 36 38",
+        color: "Clarito",
+        img: "/images/jean5.jpg ",
 
-    // }
+    },
+    {
+        id: 19,
+       name:"Pantalon de Jean",
+        description: "Pantalon de jean negro con spandex",
+        size: "30 32 38 44",
+        color: "Negro",
+        img: "/images/jeannegro.jpg",
+
+    },
+    {
+        id: 20,
+       name:"Pantalon de Jean",
+        description: "Pantalon de jean elastizado ancho",
+        size: "28 30 40 ",
+        color: "Jean",
+        img: "/images/jeans2.1.jpg",
+
+    },
+    {
+        id: 21,
+       name: "Pantalon Rotura",
+        description: "Pantalon de jean con roturas, elastizado",
+        size: "30 32 34 38",
+        color: "Clarito",
+        img: " /images/jeanrotura.jpg",
+
+    },
+    
+    {
+        id: 21,
+       name: " Perfume Essentials",
+        description: "Perfume ideal para hombre que le gusta oler bien",
+        color: "dulce",
+        img: " /images/perfummeessentials.jpg",
+    },
+    {
+        id: 22 ,
+       name:" Sweater tejido",
+        description: "Sweater tejido de lana",
+        size: " M L XXL",
+        color: "Negro",
+        img: "/images/sw skyline negro.jpg",
+
+    }, */
+   
 ]
 
 const Clothes = () => {
@@ -121,7 +206,8 @@ const Clothes = () => {
         const filteredData = clothesData.filter(
             (item) =>
                 item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                item.description.toLowerCase().includes(searchTerm.toLowerCase())
+                item.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                item.color.toLowerCase().includes(searchTerm.toLowerCase())
 
         );
         setData(filteredData);
