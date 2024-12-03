@@ -18,6 +18,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import Collapse from '@mui/material/Collapse';
 import { useNavigate } from 'react-router-dom';
 
 const drawerWidth = 240;
@@ -80,6 +81,12 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 export default function PersistentDrawerLeft() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
+  const [openProductos, setOpenProductos] = React.useState(false); // Estado para controlar el submenú de Productos
+  const navigate = useNavigate();
+
+  const handleProductosClick = () => {
+    setOpenProductos(!openProductos);  // Cambiar el estado de "Productos"
+  };
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -88,8 +95,6 @@ export default function PersistentDrawerLeft() {
   const handleDrawerClose = () => {
     setOpen(false);
   };
-
-  const navigate = useNavigate();
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -122,7 +127,7 @@ export default function PersistentDrawerLeft() {
           "& .MuiDrawer-paper": {
             width: drawerWidth,
             boxSizing: "border-box",
-            backgroundColor: "rgba(0, 0, 0, 0.8)", // fondo
+            backgroundColor: "rgba(4,92, 241, 0.8)", // fondo
             color: "white", // color texto
           },
         }}
@@ -142,7 +147,6 @@ export default function PersistentDrawerLeft() {
         <Divider />
         <List>
           {[
-            { name: "Productos", path: "/productos" },
             { name: "OFF", path: "/off" },
             { name: "Contactos", path: "/contactos" },
           ].map((text, index) => (
@@ -165,7 +169,38 @@ export default function PersistentDrawerLeft() {
               </ListItemButton>
             </ListItem>
           ))}
+
+<ListItem button onClick={handleProductosClick}>
+            <ListItemText primary="Productos" />
+          </ListItem>
+          <Collapse in={openProductos} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+              {["Remeras", "Pantalones", "Buzos"].map((text, index) => (
+                <ListItem key={index} sx={{ pl: 4 }} disablePadding>
+                  <ListItemButton onClick={() => navigate(`/productos/${index + 1}`)}>
+                    <ListItemIcon sx={{ minWidth: 35, color: 'white' }}>
+                      <MailIcon />
+                    </ListItemIcon>
+                    <ListItemText primary={text} />
+                  </ListItemButton>
+                </ListItem>
+              ))}
+            </List>
+          </Collapse>
         </List>
+      </Drawer>
+      <Main open={open}>
+        <DrawerHeader />
+      </Main>
+    </Box>
+  );
+}
+
+
+
+
+
+        /*</List>
         <Divider />
         <List>
           {["All mail", "Trash", "Spam"].map((text, index) => (
@@ -194,4 +229,4 @@ export default function PersistentDrawerLeft() {
       </Main>
     </Box>
   );
-}
+}*/

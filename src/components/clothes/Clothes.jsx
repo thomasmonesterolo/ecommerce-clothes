@@ -17,7 +17,9 @@ const clothesData = [
         name:"Remeras",
         description: "Camiseta de algodón, cómoda y ligera.",
         color: "Blanca",
-        img: "/images/cady negro.jpg"
+        img: "/images/cady negro.jpg",
+        precio:"$25.000",
+        valor: "5.0",
     },
     {
         id: 2,
@@ -25,6 +27,8 @@ const clothesData = [
         description: "Jeans ajustados de mezclilla, estilo moderno.",
         color: "Negro",
         img:  "/images/jean5.jpg",
+        precio:"$75.000",
+        valor: "4.6",
 
     },
     {
@@ -32,14 +36,18 @@ const clothesData = [
         name: "Sweater",
         description: "Sweater de hilo",
         color: 'azul',
-        img: "/images/sw linden azul.jpg"
+        img: "/images/sw linden azul.jpg",
+        precio:"$65.000",
+        valor: "4.1",
        
     },
      {
          id: 4,
          name: "Perfume Blueeblood",
          description: "Aroma citrico y amaderado",
-         img: "/images/perfumeblueblood.jpg"
+         img: "/images/perfumeblueblood.jpg",
+         precio:"$20.000",
+        valor: "4.5",
 
      },
      {
@@ -48,7 +56,9 @@ const clothesData = [
         description: "Remera 100% algodon, con estampa frontal",
          size: "S  M  L",
         color: "Negro",
-         img: "/images/bell negro.jpg"
+         img: "/images/bell negro.jpg",
+         precio:"$25.000",
+        valor: "3.8",
     },
      {
          id: 6,
@@ -57,6 +67,8 @@ const clothesData = [
          size: " M  L  XXL",
          color: "Negro",
        img: "/images/brise negro.jpg",
+       precio:"$25.000",
+        valor: "2.4",
      },
     /* {
          id: 7,
@@ -64,7 +76,9 @@ const clothesData = [
          description: "Buzo de algodon rustico, con estampa basica frontal",
          size: "L",
          color: "Negro",
-         img: "/images/buzo abraham.jpg"
+         img: "/images/buzo abraham.jpg",
+         precio:"$56.000",
+        valor: "3.0",
      },
      {
          id: 8,
@@ -72,7 +86,9 @@ const clothesData = [
          description: "Remera 100% aldodon, con estampa basica",
          size: "M  XL  XXL",
          color: "Negro",
-         img: "/images/cady beige.jpg"
+         img: "/images/cady beige.jpg",
+         precio:"$25.000",
+        valor: "2.1",
 
      },
      {
@@ -82,6 +98,8 @@ const clothesData = [
         size: "S  M  L",
        color: "Gris",
         img: "/images/campera sedam gris.jpg",
+        precio:"$63.000",
+        valor: "4.1",
 
      },
      {
@@ -90,7 +108,9 @@ const clothesData = [
     description: "Buzo con capucha, de algodon con friza.",
          size: "L  XL  XXL",
          color: "Bordo",
-         img: "/images/canguro bordo.jpg"
+         img: "/images/canguro bordo.jpg",
+         precio:"$56.000",
+        valor: "5",
      },
      {
          id: 11,
@@ -98,7 +118,9 @@ const clothesData = [
         description: "Pantalon de gabardina.",
         size: "30 36 38 40",
         color: "Azul",
-       img: "/images/chino azul1.jpg"
+       img: "/images/chino azul1.jpg",
+       precio:"$68.000",
+        valor: "3.2",
 
     },
    {
@@ -108,6 +130,8 @@ const clothesData = [
          size: " 28 30 3,8 42",
          color: "Camel",
          img: "/images/chino camel.jpg",
+         precio:"$68.000",
+        valor: "1.1",
 
      },
      {
@@ -117,6 +141,8 @@ const clothesData = [
         size: "S  M  XL",
         color: "Azul",
         img: "/images/chomba kane azul.jpg",
+        precio:"$39.000",
+        valor: "2.1",
 
     },
     {
@@ -126,7 +152,8 @@ const clothesData = [
         size: "S  M  XL",
         color: "Blanco",
         img: "/images/chomba kane blanco.jpg",
-         
+         precio:"$39.000",
+        valor: "4.1",
 },
 {       id: 15,
        name:"Chomba Kane",
@@ -134,6 +161,8 @@ const clothesData = [
         size: "S  M  XL",
         color: "Negro",
         img: "/images/chomba kane negro.jpg",
+        precio:"$39.000",
+        valor: "4.3",
 },
 {
          id: 16,
@@ -142,6 +171,8 @@ const clothesData = [
         size: "S  M  XL",
         color: "Gris",
         img: "/images/chomba kane gris.jpg",
+        precio:"$39.000",
+        valor: "1.1",
 },
 {
         id: 18,
@@ -150,6 +181,8 @@ const clothesData = [
         size: "28 30 36 38",
         color: "Clarito",
         img: "/images/jean5.jpg ",
+        precio:"$75.000",
+        valor: "3.6",
 
     },
     {
@@ -159,6 +192,8 @@ const clothesData = [
         size: "30 32 38 44",
         color: "Negro",
         img: "/images/jeannegro.jpg",
+        precio:"$75.000",
+        valor: "1.3",
 
     },
     {
@@ -168,6 +203,8 @@ const clothesData = [
         size: "28 30 40 ",
         color: "Jean",
         img: "/images/jeans2.1.jpg",
+        precio:"$78.000",
+        valor: "2.1",
 
     },
     {
@@ -177,6 +214,8 @@ const clothesData = [
         size: "30 32 34 38",
         color: "Clarito",
         img: " /images/jeanrotura.jpg",
+        precio:"$78.000",
+        valor: "4.1",
 
     },
     
@@ -186,6 +225,8 @@ const clothesData = [
         description: "Perfume ideal para hombre que le gusta oler bien",
         color: "dulce",
         img: " /images/perfummeessentials.jpg",
+        precio:"$21.000",
+        valor: "1.2",
     },
     {
         id: 22 ,
@@ -194,6 +235,8 @@ const clothesData = [
         size: " M L XXL",
         color: "Negro",
         img: "/images/sw skyline negro.jpg",
+        precio:"$75.980",
+        valor: "4.1",
 
     }, */
    
