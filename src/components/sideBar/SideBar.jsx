@@ -81,11 +81,11 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 export default function PersistentDrawerLeft() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
-  const [openProductos, setOpenProductos] = React.useState(false); // Estado para controlar el submenú de Productos
+  const [openProductos, setOpenProductos] = React.useState(false); 
   const navigate = useNavigate();
 
   const handleProductosClick = () => {
-    setOpenProductos(!openProductos);  // Cambiar el estado de "Productos"
+    setOpenProductos(!openProductos);  
   };
 
   const handleDrawerOpen = () => {
@@ -147,7 +147,6 @@ export default function PersistentDrawerLeft() {
         <Divider />
         <List>
           {[
-            { name: "OFF", path: "/off" },
             { name: "Contactos", path: "/contactos" },
           ].map((text, index) => (
             <ListItem key={index} disablePadding>
@@ -175,7 +174,7 @@ export default function PersistentDrawerLeft() {
           </ListItem>
           <Collapse in={openProductos} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              {["Remeras", "Pantalones", "Buzos"].map((text, index) => (
+              {["Remeras", "Pantalones", "Buzos","Camperas","Accesorios"].map((text, index) => (
                 <ListItem key={index} sx={{ pl: 4 }} disablePadding>
                   <ListItemButton onClick={() => navigate(`/productos/${index + 1}`)}>
                     <ListItemIcon sx={{ minWidth: 35, color: 'white' }}>
