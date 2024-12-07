@@ -176,7 +176,7 @@ export default function PersistentDrawerLeft() {
             <List component="div" disablePadding>
               {["Remeras", "Pantalones", "Buzos","Camperas","Accesorios"].map((text, index) => (
                 <ListItem key={index} sx={{ pl: 4 }} disablePadding>
-                  <ListItemButton onClick={() => navigate(`/productos/${index + 1}`)}>
+                  <ListItemButton onClick={() => navigate(`/${text}`)}>
                     <ListItemIcon sx={{ minWidth: 35, color: 'white' }}>
                       <MailIcon />
                     </ListItemIcon>
